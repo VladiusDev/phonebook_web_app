@@ -1,3 +1,0 @@
-employee_api:
-  baseUrl: "http://192.168.0.171"
-  port: 8080

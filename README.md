@@ -1,16 +1,13 @@
-# phone_book
+# Phone book app
 
-A new Flutter project.
+Телефонный справочник сотрудников
 
-## Getting Started
+## Конфиг
 
-This project is a starting point for a Flutter application.
+Добавить в папку assets файл config.yaml и прописать ip и port API шлюза - [Phone book gateway](https://github.com/VladiusDev/phonebook_gateway)
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```yaml
+employee_api:
+  baseUrl: "http://0.0.0.0"
+  port: 8080
+```
