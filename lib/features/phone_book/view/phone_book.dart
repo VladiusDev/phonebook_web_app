@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:phone_book/features/phone_book/bloc/phone_list_bloc.dart';
+import 'package:phone_book/main.dart';
 import 'package:phone_book/model/employee.dart';
 import 'package:phone_book/strings.dart';
 import 'package:phone_book/themes/theme.dart';
@@ -35,11 +36,14 @@ class _PhoneBookState extends State<PhoneBook> {
 
   @override
   Widget build(BuildContext context) {
+    final user = supabase.auth.currentUser!.email.toString();
+
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.lightBlue[50],
+        automaticallyImplyLeading: false,
+        backgroundColor: Colors.greenAccent[100],
         title: Text(appTitle, style: mainTheme.textTheme.headlineMedium),
-        actions: [],
+        actions: [Text(user), Padding(padding: EdgeInsets.all(15))],
       ),
       backgroundColor: Colors.white,
       body: Column(
