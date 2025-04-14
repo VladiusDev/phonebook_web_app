@@ -81,12 +81,12 @@ class _PhoneBookState extends State<PhoneBook> {
                         Employee employee = state.phoneList[index];
 
                         return ListTile(
-                          title: Text(employee.name,
+                          title: SelectableText(employee.name,
                               style: mainTheme.textTheme.headlineMedium),
                           subtitle: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text(
+                              SelectableText(
                                 employee.phone,
                                 style: mainTheme.textTheme.headlineSmall,
                               ),

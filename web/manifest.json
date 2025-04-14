@@ -1,11 +1,11 @@
 {
-    "name": "phone_book",
-    "short_name": "phone_book",
+    "name": "Darvin Loyalty",
+    "short_name": "Darvin Loyalty",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Darvin Loyalty app, enjoy :)",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
